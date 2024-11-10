@@ -1,0 +1,21 @@
+{
+    "situation": "Área monitorada sem alterações",
+    "logs": [
+        {"time": "09:00", "event": "Incêndio detectado", "status": "Controlado"},
+        {"time": "10:30", "event": "Equipe enviada para avaliação", "status": "Em andamento"}
+    ],
+    "resources": [
+        {"name": "Equipe Alpha", "type": "Equipe", "location": "Setor Norte"},
+        {"name": "Veículo 1", "type": "Caminhão", "location": "Base"}
+    ],
+    "cameras": [
+        {"id": 1, "status": "Ativa", "location": "Ponto A"},
+        {"id": 2, "status": "Inativa", "location": "Ponto B"}
+    ],
+    "predictions": "Risco de incêndio elevado nas próximas 24h",
+    "history": [
+        {"date": "2024-10-30", "event": "Incêndio controlado", "details": "Setor Sul"}
+    ],
+    "weather": {"temperature": 25, "condition": "Ensolarado"},
+    "gateway": "Conexão estável com todos os dispositivos"
+}
