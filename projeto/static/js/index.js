@@ -2,11 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Carregar o conteúdo HTML dos painéis
     initializePanel("history-panel", "/panel/history");
     initializePanel("resources-panel", "/panel/resources");
-    initializePanel("weather-panel", "/panel/weather");
+    initializePanel("features-panel", "/panel/features");
     initializePanel("situation-panel", "/panel/situation");
     initializePanel("gateway-panel", "/panel/gateway");
     initializePanel("predictions-panel", "/panel/predictions");
-    initializePanel("camera-panel", "/panel/camera");
     initializePanel("log-panel", "/panel/log");
 
 
