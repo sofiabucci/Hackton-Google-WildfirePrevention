@@ -1,0 +1,40 @@
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Cria 6 colunas de tamanho igual */
+    margin-left: auto;
+    width: 90%; /* Define a largura da grid (ajuste conforme necessário) */
+    gap: 15px; /* Espaço entre os ícones */
+    justify-items: center; /* Centraliza os ícones nas colunas */
+    align-items: center; /* Centraliza os ícones nas linhas */
+}
+
+.material-icons {
+    font-size: 55px; /* Tamanho do ícone */
+    cursor: pointer; /* Deixa o cursor como "pointer" ao passar sobre o ícone */
+    transition: transform 0.3s ease-in-out; /* Animação de clique */
+}
+
+#weather_icon:hover {
+    transform: scale(1.2); 
+}
+
+#weather_icon {
+    grid-column: 1 / 2;
+}
+
+#camera_icon {
+    grid-column: 2 / 3;
+}
+
+#search_icon {
+    grid-column: 3 / 4;
+}
+
+#menu_icon {
+    grid-column: 4 / 5;
+}
+
+#settings_icon {
+    grid-column: 5 / 6;
+}

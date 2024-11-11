@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predictions</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../../static/css/components/resources-predictions.css">
+    <script src="./predictions.js" defer></script>
 </head>
 <body>
-    <script src="../js/components/predictions.js"></script>
+    <div class="container">
+        <i class="material-icons" id="filter_icon" onclick="openFilter()">filter_alt</i>
+
+        <i class="map" id="map" </i>
+
+        <i class="material-icons" id="zoomin_icon" onclick="openZoomIn()">zoom_in</i>
+        <i class="material-icons" id="zoomout_icon" onclick="openZoomOut()">zoom_out</i>
+
+        <i class="material-icons" id="arrowU_icon" onclick="openArrowU()">keyboard_arrow_up</i>
+        <i class="material-icons" id="arrowR_icon" onclick="openArrowR()">keyboard_arrow_right</i>
+        <i class="material-icons" id="arrowL_icon" onclick="openArrowL()">keyboard_arrow_left</i>
+        <i class="material-icons" id="arrowD_icon" onclick="openArrowD()">keyboard_arrow_down</i>
+    </div>
 </body>
 </html>

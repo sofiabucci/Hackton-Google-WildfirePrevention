@@ -15,13 +15,14 @@ def get_data():
 def index():
     return render_template('index.html')
 
-# Rota para os painéis, agora buscando na pasta 'components'
+# Rota para os painéis com estrutura atualizada
 @app.route('/panel/<panel_name>')
 def panel(panel_name):
     try:
-        # Tenta renderizar o painel correspondente na pasta 'components'
-        return render_template(f'components/{panel_name}.html')
-    except:
+        # Acessa o HTML no formato 'components/{panel_name}/{panel_name}.html'
+        return render_template(f'components/{panel_name}/{panel_name}.html')
+    except Exception as e:
+        print(f"Erro ao carregar o painel: {e}")
         return "Página não encontrada", 404
 
 if __name__ == '__main__':
