@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../../../static/css/components/resources-predictions-situation.css">
     <script src="./situation.js" defer></script>
 </head>
 <body>
     <div class="container">
+        <i class="material-icons" id="history_icon" onclick="openModal('history-popup')"></i>
+        <i class="material-icons" id="gateway_icon" onclick="openModal('gateway-popup')"></i>
+
+
         <i class="material-icons" id="filter_icon" onclick="openFilter()">filter_alt</i>
         <i class="material-icons" id="searchS_icon" onclick="openFilter()">search</i>
 
@@ -23,3 +28,4 @@
     </div>
 </body>
 </html>
+

@@ -24,6 +24,24 @@ def panel(panel_name):
     except Exception as e:
         print(f"Erro ao carregar o painel: {e}")
         return "Página não encontrada", 404
+    
+@app.route('/features/<popup>-popup')
+def features_popups(popup_name):
+    try:
+        return render_template(f'components/features/popups/{popup_name}/{popup_name}.html')
+    except Exception as e:
+        print(f"Erro ao carregar o popup: {e}")
+        return "Página não encontrada", 404
+
+@app.route('/situation/<popup>-popup')
+def situation_popups(popup_name):
+    try:
+        return render_template(f'components/situation/popups/{popup_name}/{popup_name}.html')
+    except Exception as e:
+        print(f"Erro ao carregar o popup: {e}")
+        return "Página não encontrada", 404
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
